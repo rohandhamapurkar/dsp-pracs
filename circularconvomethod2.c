@@ -1,5 +1,5 @@
 #include<stdio.h>
-//This is an implementation of citcular convolution.
+//This is an implementation of circular convolution. 19
 int main(){
     int lx,lh,i,k,maxlen,modval;
     printf("Enter length of x[n]");
@@ -49,8 +49,7 @@ int main(){
             }
             else
             {
-                modval = (i-k)%maxlen;
-                y[i] += (x[k]*h[modval]);
+                y[i] += (x[k]*h[(i-k)]);
             }
         }
         printf("\ny(%d)=%d",i,y[i]);
