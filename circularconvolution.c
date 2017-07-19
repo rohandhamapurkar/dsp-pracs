@@ -10,7 +10,7 @@ void downshift(int colNum ,int n,int arr[][n],int iter){
         }
         arr[0][colNum]=temp;
     }
-    
+
 }
 
 int main(){
@@ -20,7 +20,7 @@ int main(){
     scanf("%d",&n);
     printf("Enter length of h[n]"); //input len h[n]
     scanf("%d",&m);
-    int ylen = n+m-1;  //y[n] length determined
+    int ylen = n+m-1;  //y[n] length determined *****need to change to the longest array
     int x[ylen][ylen],h[ylen],y[ylen];
 
     printf("Enter x[n]"); //input x[n]
@@ -28,7 +28,7 @@ int main(){
         scanf("%d",&x[i][0]);
     }
 
-    for(i=0;i<ylen;i++){  //creating x[ylen][ylen] matrix for calculation 
+    for(i=0;i<ylen;i++){  //creating x[ylen][ylen] matrix for calculation
         for(j=0;j<ylen;j++){
             if(i<n){
                 x[i][j]=x[i][0];
@@ -36,7 +36,7 @@ int main(){
             else{
                 x[i][j] = 0;
             }
-            
+
         }
     }
 
@@ -62,15 +62,15 @@ int main(){
         }
         printf("\ny[%d]=%d",i,y[i]);
     }
-    
-    
+
+
     for(i=0;i<ylen;i++){
-        
+
         for(j=0;j<ylen;j++){
             printf("%d",x[i][j]); //print x[ylen][ylen]
         }
         printf("\n");
     }
-    
+
 return 0;
 }
