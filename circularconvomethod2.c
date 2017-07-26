@@ -1,5 +1,5 @@
 #include<stdio.h>
-//This is an implementation of circular convolution. 19
+//This is an implementation of circular convolution. 19/07/17
 int main(){
     int lx,lh,i,k,maxlen,modval;
     printf("Enter length of x[n]");
