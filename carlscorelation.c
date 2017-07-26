@@ -1,5 +1,5 @@
 #include<stdio.h>
-//This is an implementation of linear convolution.
+//This is an implementation of carls corelation.
 int main(){
     int lx,lh,i,k,llx,ulx,llh,ulh;
     printf("Enter length of x[n]");
