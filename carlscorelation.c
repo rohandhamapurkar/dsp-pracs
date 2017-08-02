@@ -1,5 +1,5 @@
 #include<stdio.h>
-//This is an implementation of carls corelation.
+//This is an implementation of Carls Corelation.
 int main(){
     int lx,lh,i,k,llx,ulx,llh,ulh;
     printf("Enter length of x[n]");
