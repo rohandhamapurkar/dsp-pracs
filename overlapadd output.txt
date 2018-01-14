@@ -1,0 +1,44 @@
+dsp programs $ gcc overlapadd.c 
+dsp programs $ ./a.out
+Enter length of x[n]
+13
+Enter length of h[n]
+4
+Enter elements for x[n]
+1 2 -1 3 -2 1 0 3 4 -2 3 1 4
+Enter elements for h[n]
+1 -1 0 1
+Circular Convolution for each x1[n]
+1	1	-3	5	-1	-1	3
+Circular Convolution for each x2[n]	
+-2	3	-1	1	-2	0	3
+Circular Convolution for each x3[n]	
+4	-6	5	2	-3	3	1
+Circular Convolution for each x4[n]	
+4	-4	0	4	0	0	0	
+arr:1,	 i:0,	 j:0
+arr:1,	 i:0,	 j:1
+arr:-3,	 i:0,	 j:2
+arr:5,	 i:0,	 j:3
+arr:-1,	 i:0,	 j:4
+arr:-1,	 i:0,	 j:5
+arr:3,	 i:0,	 j:6
+arr:-2,	 i:1,	 j:4
+arr:3,	 i:1,	 j:5
+arr:-1,	 i:1,	 j:6
+arr:1,	 i:1,	 j:7
+arr:-2,	 i:1,	 j:8
+arr:0,	 i:1,	 j:9
+arr:3,	 i:1,	 j:10
+arr:4,	 i:2,	 j:8
+arr:-6,	 i:2,	 j:9
+arr:5,	 i:2,	 j:10
+arr:2,	 i:2,	 j:11
+arr:-3,	 i:2,	 j:12
+arr:3,	 i:2,	 j:13
+arr:1,	 i:2,	 j:14
+arr:4,	 i:3,	 j:12
+arr:-4,	 i:3,	 j:13
+arr:0,	 i:3,	 j:14
+arr:4,	 i:3,	 j:15
+1	1	-3	5	-3	2	2	1	2	-6	8	2   -2  2   1   1
